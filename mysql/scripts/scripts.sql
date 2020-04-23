@@ -9,3 +9,5 @@ CREATE TABLE IF NOT EXISTS post(
     FULLTEXT(title, content),
     PRIMARY KEY (id)
 );
+
+CREATE FULLTEXT INDEX INDEX_FT_CONTENT ON post (title,content);
